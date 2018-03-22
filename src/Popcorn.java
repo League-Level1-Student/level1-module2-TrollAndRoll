@@ -40,10 +40,23 @@ public class Popcorn {
 
 	private int kernels = 20;
 	private String flavor;
-
-	Popcorn(String flavor) {
+	
+	
+	public static void main(String[] args) 
+	{
+		Popcorn good = new Popcorn("popcorn");
+		Microwave chess = new Microwave();
+		
+		chess.putInMicrowave(good);
+		chess.setTime(2);
+		chess.startMicrowave();
+	}
+	
+	Popcorn(String flavor) 
+	{
 		this.flavor = flavor;
 		System.out.println("Popcorn says: making package of " + this.flavor + " popcorn.");
+		
 	}
 
 
