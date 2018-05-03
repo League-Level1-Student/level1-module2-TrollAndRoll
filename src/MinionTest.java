@@ -28,13 +28,13 @@ public class MinionTest {
 	public void testConstructor() {
 		Minion stuart = new Minion("Stuart", 1, "yellow", "");
 		assertEquals("Stuart", stuart.getName());
-		assertEquals(1, stuart.getEyes());
-		assertEquals("yellow", stuart.getColor());
+		assertEquals(1, stuart.getEyes(1));
+		assertEquals("yellow", stuart.getColor("yellow"));
 
 		Minion dave = new Minion("Dave", 2, "yellow", "");
 		assertEquals("Dave", dave.getName());
-		assertEquals(2, dave.getEyes());
-		assertEquals("yellow", dave.getColor());
+		assertEquals(2, dave.getEyes(2));
+		assertEquals("yellow", dave.getColor("yellow"));
 	}
 
 	@Test

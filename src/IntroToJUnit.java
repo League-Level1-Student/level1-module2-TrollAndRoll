@@ -1,7 +1,28 @@
+import static org.junit.Assert.assertEquals;
 
 public class IntroToJUnit 
 {	
+	public static void main(String[] args) 
+	{
+		 assertEquals(4, add(2,2));
+	     assertEquals("brains", getZombieFood());
+	     assertEquals(3, getLargest(3,2)); 
+	}
 	
+	static int add(int num1, int num2)
+	{
+		return num1+num2;
+	}
+	
+	static String getZombieFood()
+	{
+		return "brains";
+	}
+	
+	static int getLargest(int a, int b)
+	{
+		return Math.max(a, b);
+	}
 }
 /*
 Get a red marker, a green marker, and another color to write text.
