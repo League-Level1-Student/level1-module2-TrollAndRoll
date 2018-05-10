@@ -8,6 +8,9 @@ public class Vault
 	public static void main(String[] args) 
 	{
 		Vault i = new Vault();
+		JamesBond e = new JamesBond();
+		
+		
 	}
 	
 	boolean trycode(int a)
