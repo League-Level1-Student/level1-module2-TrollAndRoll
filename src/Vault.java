@@ -5,11 +5,16 @@ public class Vault
 	Random gen = new Random();
 	int code = gen.nextInt(1000000000);
 	
+	Vault(int code)
+	{
+		this.code = code;
+	}
+	
 	public static void main(String[] args) 
 	{
-		Vault i = new Vault();
+		Vault i = new Vault(32);
 		JamesBond e = new JamesBond();
-		
+		System.out.println(e.findCode(i));
 		
 	}
 	
@@ -24,9 +29,7 @@ public class Vault
 			return false;
 		}
 	}
-	
 }
-
 
 /*
  *  James Bond is trying to crack a vault. Before we start to write code, we will draw a UML diagram on the whiteboard (teacher will help) and figure out what the method signatures will be.
