@@ -71,14 +71,20 @@ class Pig {
 
 6. Imagine there is a pig instance called ziggy. Write code that will print “bacon for breakfast” if ziggy is destined to be turned into bacon, or “eggs for breakfast” if he is not.
 
-
-
+public Pig(String name, boolean bacon)
+{
+	this.name = name;
+	this.bacon = bacon;
 	
-
-
-
-
-
+	if(bacon)
+	{
+		System.out.println("bacon for breakfast");	
+	}
+	else
+	{
+		System.out.println("eggs for breakfast");
+	}
+	
 Copyright League of Amazing Programmers 2013-2018
 
 */
